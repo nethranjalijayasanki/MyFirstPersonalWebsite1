@@ -2,17 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+<!--    Animate.css-->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+<!--&lt;!&ndash;    AOS&ndash;&gt;-->
+<!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+
+
     <title>My Portfolio</title>
+
+    <style>
+        .header{
+            background: url("asset/image/img.png");
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+
+        }
+        .header .nav a{
+            margin-top: 5px;
+            float: right;
+            color:white;
+            text-align: center;
+            padding: 10px 20px;
+            font-weight: bold;
+            display: block;
+            font-style: revert;
+            text-decoration: none;
+            padding-right: 30px;
+            border-radius: 10px;
+        }
+        .header .info h2{
+            color: white;
+            font-family: inter;
+            font-size: 2.5rem;
+            font-weight: bold;
+            padding-top: 160px;
+            padding-left: 50px;
+        }
+        .header .info h1 {
+            color:#5293fa ;
+            font-family: inter;
+            font-size: 4.5rem;
+            font-weight: bold;
+            padding-top: 0px;
+            padding-left: 100px;
+        }
+        .header .info h3 {
+            color: #ffff;
+            font-family: inter;
+            font-size: 1.5rem;
+            padding-left: 100px;
+        }
+        .more{
+            width: 150px;
+            height: 50px;
+            margin-left: 100px;
+            margin-top: 20px;
+            background:#11181e;
+            border: 2px solid #5293fa;
+            border-radius: 20px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            color: whitesmoke;
+        }
+
+    </style>
 </head>
 <body>
-<!--        home page-->
-<!--            input home page image-->
-    <input type="image" src="asset/image/myImage.png" height="600px" width="300px">
-<!--            home page bar-->
-    <h3>Home  Education   Skills   Projects   Gallery   Contact</h3>
-<!--                title-->
-    <h2>Welcome to</h2>
-    <h1>Nethranjali's </h1><h2>Programming portfolio</h2>
+<!--        home page start-->
+    <header class="header" id="home">
+
+        <!--            home page bar-->
+            <nav class="nav">
+                <h3>
+                    <a href="#Contact" class="Contact">Contact</a>
+                    <a href="#Blogs"class="links">Blogs</a>
+                    <a href="#Projects" class="links">Projects</a>
+                    <a href="#Skills&tools"class="links">Skills & Tools</a>
+                    <a href="#AboutMe" class="links">AboutMe</a>
+                    <a href="#Home" class="links">Home</a>
+                </h3>
+            </nav>
+
+            <!--                title-->
+        <div class="info" >
+            <h2>Hey , I'm</h2>
+            <h1>NETHRANJALI </h1>
+            <h1 class="secondName">JAYASANKI</h1>
+            <h3>Fullstack Developer</h3>
+            <button class="btn more">More info</button>
+        </div>
+
+    </header>
+<!--        home page end-->
+
+
+
+
+    <input type="image" src="asset/image/my_image.jpg" height="600px" width="600px">
+
 <!--                    content-->
 <p>Hi !  I’m Nethranjali Jayasanki,
     a passionate software
@@ -58,7 +155,7 @@
 <!--        title-->
     <h1>Projects...</h1>
 <!--                input side image-->
-    <input type="image" src="asset/image/project.png" height="600px" width="400px">
+    <input type="image" src="asset/image/project.png" height="500px" width="400px">
 <!--            sub title 01 -->
     <h3>Hardware Management System</h3><h4>Java</h4>
 <!--            hyper link 01 -->
@@ -80,18 +177,21 @@
 <!--            sub title 01 -->
     <h3>Design Mockups & Wierframes</h3>
 <!--                    input images-->
-    <input type="image" src="asset/image/post1.jpg" height="400px" width="600px">
-    <input type="image" src="asset/image/post2.jpg" height="400px" width="600px">
-    <input type="image" src="asset/image/post3.jpg" height="400px" width="600px">
+    <input type="image" src="asset/image/post1.jpg" height="200px" width="50%">
+    <input type="image" src="asset/image/post2.jpg" height="200px" width="50%">
+    <input type="image" src="asset/image/post3.jpg" height="200px" width="50%">
 <!--            sub title 02 -->
     <h3>Event Photo</h3>
 <!--                    input image-->
+<div data-aos="zoom-in">
     <input type="image" src="asset/image/inovestaGroup.jpg" height="400px" width="600px">
+</div>
+
 <!--        end of the gallery page-->
 
 
 <!--    contact page-->
-    <h1>Contact Me...</h1>
+    <h1 class="animate__animated animate__rubberBand animate__infinite">Contact Me...</h1>
 
     <input type="image" src="asset/image/contactMe.jpg" height="400px" width="600px">
     <input type="image" src="asset/icon/github.png" height="50px" width="50px">
@@ -145,7 +245,14 @@
 
     </footer>
 <!--        end of the footer page-->
+<input type="image" src="asset/image/footer.jpeg" height="400px" width="100%">
 
 
+
+<!--&lt;!&ndash;        AOS&ndash;&gt;-->
+<!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+<!--<script>-->
+<!--    AOS.init();-->
+<!--</script>-->
 </body>
 </html>
