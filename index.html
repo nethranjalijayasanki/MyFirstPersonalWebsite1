@@ -45,47 +45,52 @@
     </header>
 <!--        home page end-->
 
+<!--        About page start-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="asset/image/me.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>A</span>bout <span>M</span>e...</h1>
+                    <br><p>Hi !  I’m Nethranjali Jayasanki, a passionate software developer with expertise in web
+                        <br>development, machine learning, ect. Here, you’ll find my latest projects and more about <br>my journey in the world of programming.
+                    </p><br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link2" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links active-link3" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>UI/UX Training at IJSE</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Software Engineering Diploma at IJSE</li>
+                            <li><span>2023</span><br>English Diploma from BWEA</li>
+                            <li><span>2020</span><br>G.C.E(A/L) from Sripalee College</li>
+                            <li><span>2017</span><br>G.C.E(O/L) from Don Pedrick College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--        end of the about page-->
 
 <!--                    content-->
-<p>Hi !  I’m Nethranjali Jayasanki,
-    a passionate software
-    developer
-    with expertise in web
-    development,
-    machine learning, ect.
-    Here, you’ll find my latest
-    projects and
-    more about my journey in the
-    world of
-    programming.
-<!--        end of the home page-->
-
-<!--        education page-->
-</p>
-<!--                title-->
-    <h1>Education...</h1>
-<!--                content-->
-    <h3>Don Pedrick College</h3><h4>O/L Completed (2017)</h4>
-    <h3>Sripalee College</h3><h4>A/L Completed (2020)</h4>
-    <h3>British Way English Academy</h3><h4>Graduated Diploma in English (2022)</h4>
-    <h3>University of Moratu</h3><h4>Python , Web designing for beginners(2024-2025)</h4>
-    <h3>Institute of Software Engineering</h3><h4>Graduate Diploma in Software Engineering (2023-2025)</h4>
-<!--        end of the education page-->
-
-
-<!--    skill page-->
-<!--        title-->
-    <h1>Skills...</h1>
-<!--            sub title 01 -->
-    <h3>Language</h3>
-<!--                content-->
-    <h4>Sinhala</h4><h4>English</h4><h4>Tamil</h4><h4>Japanees</h4>
-<!--            sub title 02 -->
-    <h3>Other</h3>
-<!--                content-->
-    <h4>Problem Solving</h4><h4>Critical Thinking</h4><h4>Teamwork</h4>
-<!--        end of the skill page-->
-
 
 <!--    project page-->
 <!--        title-->
@@ -190,5 +195,23 @@
 <!--<script>-->
 <!--    AOS.init();-->
 <!--</script>-->
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+                // tablink.classList.add("active-link2");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
