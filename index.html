@@ -13,6 +13,8 @@
 <!--&lt;!&ndash;    AOS&ndash;&gt;-->
 <!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
 
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <!--        home page start-->
@@ -23,10 +25,9 @@
                 <img src="asset/icon/logo_my.png" class="logo" height="100px" width="150px">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li> <li>
-                    <a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
                     <li><a href="#">Assignment</a></li>
-                    <li><a href="#">Skills & Tools</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -54,81 +55,100 @@
                     <img src="asset/image/me.png">
                 </div>
                 <div class="about-col-2">
+<!--                    title-->
                     <h1 class="sub-title"><span>A</span>bout <span>M</span>e...</h1>
-                    <br><p>Hi !  I’m Nethranjali Jayasanki, a passionate software developer with expertise in web
-                        <br>development, machine learning, ect. Here, you’ll find my latest projects and more about <br>my journey in the world of programming.
+                    <br><p>Hi !  I’m Nethranjali Jayasanki, a passionate software developer <br>with expertise in web
+                        <br>development, machine learning, ect. Here, you’ll find my latest projects <br>and more about <br>my journey in the world of programming.
                     </p><br>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links active-link2" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links active-link3" onclick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-content active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/ios apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="experience">
-                        <ul>
-                            <li><span>2024 - Current</span><br>UI/UX Training at IJSE</li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="education">
-                        <ul>
-                            <li><span>2024</span><br>Software Engineering Diploma at IJSE</li>
-                            <li><span>2023</span><br>English Diploma from BWEA</li>
-                            <li><span>2020</span><br>G.C.E(A/L) from Sripalee College</li>
-                            <li><span>2017</span><br>G.C.E(O/L) from Don Pedrick College</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 <!--        end of the about page-->
 
-<!--                    content-->
 
-<!--    project page-->
+<!--    more page start-->
+<div id="more">
+    <div class="container">
 <!--        title-->
-    <h1>Projects...</h1>
-<!--                input side image-->
-    <input type="image" src="asset/image/project.png" height="500px" width="400px">
-<!--            sub title 01 -->
-    <h3>Hardware Management System</h3><h4>Java</h4>
-<!--            hyper link 01 -->
-    <a href="https://github.com/nethranjalijayasanki/Hardware-MS-MVC.git">Link</a>
-<!--            sub title 02 -->
-    <h3>Coat Company(pvc) Management System</h3><h4>Java</h4><h4>HTML</h4>
-<!--            hyper link 02 -->
-    <a href="https://github.com/nethranjalijayasanki/CourseWork-OOP.git">Link</a>
-<!--            sub title 03 -->
-    <h3>Hardware Management System</h3><h4>Java</h4>
-<!--            hyper link 03 -->
-    <a href="https://github.com/nethranjalijayasanki/CourseWork-OOP.git">Link</a>
+        <h1 class="sub-title"><span>M</span>ore...</h1>
+        <div class="more_list">
+            <div>
+                <h2>Skills</h2>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h2>Experience</h2>
+                <div class="tab-content2 active-tab2" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>UI/UX Training at IJSE</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h2>Education</h2>
+                <div class="tab-content3 active-tab3" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Software Engineering Diploma at IJSE</li>
+                        <li><span>2023</span><br>English Diploma from BWEA</li>
+                        <li><span>2020</span><br>G.C.E(A/L) from Sripalee College</li>
+                        <li><span>2017</span><br>G.C.E(O/L) from Don Pedrick College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    more page end-->
+
+
+<!--    project page start-->
+<div id="projects">
+    <div class="container">
+<!--        title-->
+        <h1 class="sub-title"><span>P</span>rojects...</h1>
+        <div class="project_list">
+            <div class="work">
+                <img src="asset/image/img.png" height="600px">
+                <div class="layer">
+                    <h3>Hardware Manage System</h3>
+                    <p>A Hardware Management System monitors, controls, and manages computer or network hardware like servers, storage units, and network devices. It checks hardware status, reports errors, and automates maintenance to ensure efficient operation and reduce failures.</p>
+                    <a href="https://github.com/nethranjalijayasanki/Hardware-MS-MVC.git"><img src="asset/icon/github.png"></a>
+
+                </div>
+               </div>
+            <div class="work">
+                <img src="asset/image/img_1.png">
+                <div class="layer">
+                    <h3>Coat Company(pvc) Management System</h3>
+                    <p>Managing a coat company involves overseeing the production, marketing, sales, and financial aspects of the business to ensure it runs smoothly and profitably.</p>
+                    <a href="https://github.com/nethranjalijayasanki/Hardware-MS-MVC.git"><img src="asset/icon/github.png"></a>
+
+                </div>
+               </div>
+            <div class="work">
+                <img src="asset/image/img_2.png">
+                <div class="layer">
+                    <h3>Connect 4 Game</h3>
+                    <p>Connect 4 is a two-player game played on a 6-row, 7-column grid. Players take turns dropping discs, aiming to connect four in a row, column, or diagonal. The grid is a 2D array, and discs fall to the lowest available spot in the chosen column. The game checks for a win or draw after each move and continues until there's a winner or the grid is full. Methods manage input, validate moves, and check for wins.</p>
+                    <a href="https://github.com/nethranjalijayasanki/Connect04-Game.git"><img src="asset/icon/github.png"></a>
+                </div>
+               </div>
+        </div>
+    </div>
+</div>
 <!--        end of the project page-->
 
 
-<!--    gallery page-->
-<!--        title-->
-    <h1>Assignment...</h1>
-<!--            sub title 01 -->
-    <h3>Design Mockups & Wierframes</h3>
-<!--                    input images-->
-    <input type="image" src="asset/image/post1.jpg" height="200px" width="50%">
-    <input type="image" src="asset/image/post2.jpg" height="200px" width="50%">
-    <input type="image" src="asset/image/post3.jpg" height="200px" width="50%">
-<!--            sub title 02 -->
-    <h3>Event Photo</h3>
-<!--                    input image-->
-<div data-aos="zoom-in">
-    <input type="image" src="asset/image/inovestaGroup.jpg" height="400px" width="600px">
-</div>
+<!--    Assignment page start-->
+<!--        end of the Assignment page-->
 
-<!--        end of the gallery page-->
 
 
 <!--    contact page-->
@@ -189,29 +209,24 @@
 <input type="image" src="asset/image/footer.jpeg" height="400px" width="100%">
 
 
+<!--    <script>-->
 
-<!--&lt;!&ndash;        AOS&ndash;&gt;-->
-<!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
-<!--<script>-->
-<!--    AOS.init();-->
-<!--</script>-->
+<!--        var tablinks = document.getElementsByClassName("tab-links");-->
+<!--        var tabcontents = document.getElementsByClassName("tab-content");-->
 
+<!--        function opentab(tabname){-->
+<!--            for (tablink of tablinks){-->
+<!--                tablink.classList.remove("active-link");-->
+<!--            }-->
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-content");
+<!--            for (tabcontent of tabcontents){-->
+<!--                tabcontent.classList.remove("active-tab");-->
+<!--            }-->
 
-        function opentab(tabname){
-            for (tablink of tablinks){
-                tablink.classList.remove("active-link");
-                // tablink.classList.add("active-link2");
-            }
-            for (tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+<!--            event.currentTarget.classList.add("active-link");-->
+<!--            document.getElementById(tabname).classList.add("active-tab");-->
+<!--        }-->
+
+<!--    </script>-->
 </body>
 </html>
