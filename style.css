@@ -317,9 +317,135 @@ nav ul li a:hover::after{
     height: 100%;
 }
 
+/*Assignment*/
+#assignment{
+    padding: 50px 0;
+
+}
+.sub-title{
+    text-align: center;
+}
+.ass_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    /*grid-template-rows: repeat(auto-fit, minmax(200px,1fr));*/
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.ass{
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.ass img{
+    width: 100%;
+    /*border-radius: 20px;*/
+    display: block;
+    transition:transform 0.5s;
+}
+.layers{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.5),#5293fa);
+    /*border-radius: 20px;*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layers h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layers a{
+    margin-top: 20px;
+    color: #5293fa;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.ass:hover img{
+    transform: scale(1.1);
+}
+.ass:hover .layers{
+    height: 50%;
+}
+
+/*contact*/
+.contact-left{
+    padding: 10px;
+    flex-basis: 35%;
+    color: white;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.social-icon a{
+    margin-top: 30px;
+}
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #5293fa;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icon a:hover{
+    color: #5293fa;
+    transform: translateY(-10px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #5293fa;
+}
+.contact-right form{
+    padding: 50px;
+    width: 100%;
+}
+.contact-right, input{
+    margin: 10px;
+}
+form input, form textarea{
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
 
 /*footer*/
-footer{
-    background:#11181e ;
-    color: white;
+footer {
+    background: linear-gradient(180deg, #5293fa -10.89%, #000000 75%);
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    margin: auto;
+}
+footer>h4{
+    text-align: center;
 }
